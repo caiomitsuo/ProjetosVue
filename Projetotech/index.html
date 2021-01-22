@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="/techno/vue.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link href="https:/fonts.googleapis.com/css?family=Noto+Serif:400,700"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+
+    <section class="modal" v-if="produto" @click="fecharModal">
+    <div class="modal_container">
+      <div class="modal_img">
+        <img :src="produto.img" :alt="produto.nome"> </img>
+      </div>
+      <div class="modal_dados">
+      <button @click="produto = false" class="modal_fechar"> X </button>
+      <span class="modal_preco"> {{produto.preco}} </span>
+      <h2 class="modal_titulo"> {{produto.nome}}</h2>
+      <p class="modal_descricao"> {{produto.descricao}}</p>
+      <button class="modal_btn">Adicionar Item</button>
+      </div>
+      <div class="avaliacoes">
+        <h2 class="avaliacoes_subtitulo"> Avaliações</h2>
+        <ul>
+          <li v-for="avaliacoes in produto.avaliacoes"> 
+          <p class="avaliacao_descricao">{{avaliacoes.descricao}}</p>
+          <p class="avaliacao_usuario">{{avaliacoes.nome}} | {{avaliacoes.estrelas}} estrelas</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </section>
+      <section class="produtos">
+        <div v-for="item in produtos" @click="fetchProduto(item.id)" :key="item.id" class="produto">
+          <img :src="item.img" :alt="item.name" class="produto_img" />
+          <div class="produto_info">
+            <span class="produto_preco">{{item.preco | numeroPreco}} </span>
+            <h2 class="produto_nome">{{ item.nome}}</h2>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./techno/app.js"></script>
+  </body>
+</html>
