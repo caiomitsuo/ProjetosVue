@@ -1,11 +1,13 @@
 <template>
- <div>
-   <ul>
-     <li v-for="(user,u) in users" :key="u">
-       {{user.culture}}
-     </li>
-   </ul>
- </div>
+  <div>
+    <table>
+      <tbody>
+        <tr v-for="dado in dados" :key="dado.id">
+          <td>{{dado.id}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
 
 <script>
@@ -13,19 +15,19 @@ import axios from "axios";
 export default {
   data() {
     return {
-      users: [],
+        dados: Array,
     };
   },
   mounted() {
-    this.getUsers();
+    this.getDados();
   },
   methods: {
-    getUsers() {
-      axios
-        .get("https://run.mocky.io/v3/2a793688-2254-4663-8d2a-0b1845f16777")
-        .then((response) => {
-          this.users = response.data.content;
-        });
+    async getDados() {
+        const response = await axios.get("https://run.mocky.io/v3/2a793688-2254-4663-8d2a-0b1845f16777")
+        .then(response => {
+          this.dados = response.data;
+        })
+        .catch((e) => console.log(e));
     },
   },
 };
