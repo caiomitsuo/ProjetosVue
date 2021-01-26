@@ -8,6 +8,13 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "vuetify": "2.0.0"
+  },
+  "devDependencies": {
+    "@mdi/font": "^5.9.55",
+    "@nuxtjs/vuetify": "^1.11.3",
+    "sass-loader": "^8.0.2",
+    "node-sass": "^4.13.1"
   }
 }

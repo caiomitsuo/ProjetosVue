@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+.card {
+  width: 80vw;
+  margin-top: 15vh;
+
+  &-column {
+    text-align: center;
+    margin-right: 1vw;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+
+    &__btn {
+      color: #399565;
+      cursor: pointer;
+      background-color: #d0e7dc;
+      border-radius: 40px;
+      width: 12vw;
+      padding: 4px 4px 4px 4px;
+      margin-top: 1vh;
+      text-align: center;
+    }
+    &-title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      padding-left: 0.5vw;
+      color: black;
+    }
+
+    &__culture {
+      line-height: 2vh;
+      display: flex;
+      flex-direction: row;
+
+      &__title {
+        font-family: "roboto";
+        font-weight: bolder;
+        padding-left: 0.5vw;
+        color: #797f88;
+      }
+    }
+
+    &__soja {
+      font-family: "Montserrat", sans-serif;
+      color: #21ac7c;
+    }
+
+    &-impurity {
+      font-family: "Montserrat", sans-serif;
+      color: #21ac7c;
+    }
+    &-colheita {
+      font-family: "Montserrat", sans-serif;
+      color: #21ac7c;
+    }
+    &-local {
+      font-family: "Montserrat", sans-serif;
+      color: #21ac7c;
+    }
+  }
+}
