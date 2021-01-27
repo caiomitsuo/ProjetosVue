@@ -89,97 +89,37 @@ video {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Yusei+Magic&display=swap");
+
 template {
   background-color: #e4eae8;
+  margin-top: 10vh;
 }
-.card {
-  &-logo {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    margin-left: 5vw;
-    &__title {
-      font-family: "Raleway";
-      color: #21ac7c;
-      font-size: 24px;
-      font-weight: bold;
-    }
+table {
+  margin-top: 10vh;
+  margin-left: 10vh;
+}
+.table {
+  &-title {
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: black;
+    padding: 3px 15px;
+    text-align: left;
   }
+
   &-content {
-    display: flex;
-    flex-direction: row;
-    margin-left: 5vw;
-    &__title {
-      font-family: "Montserrat", sans-serif;
-      font-weight: bold;
-      color: black;
-      font-size: 16px;
-    }
+    font-family: "Montserrat", sans-serif;
+    padding: 3px 15px;
+    text-align: left;
 
-    &__culture {
-      list-style: none;
-      font-size: 14px;
-      width: 11vw;
-      line-height: 3vh;
-      margin-top: 1vh;
+    &--trigo {
+      color: #b49067;
     }
-
-    &__soja {
-      font-family: "Montserrat", sans-serif;
+    &--milho {
       color: #fead69;
     }
-
-    &__impurity {
-      font-family: "Montserrat", sans-serif;
-      color: gray;
-    }
-    &__colheita {
-      font-family: "Montserrat", sans-serif;
-      color: gray;
-    }
-    &__delivery {
-      font-family: "Montserrat", sans-serif;
-      color: gray;
-    }
-
-    &__driver {
-      font-family: "Montserrat", sans-serif;
-      color: gray;
-    }
-
-    &__humidity {
-      font-family: "Montserrat", sans-serif;
-      color: gray;
-    }
-  }
-  @media (max-width: 768px) {
-    .card {
-      &-logo {
-        &__title {
-          font-family: "Raleway";
-          color: #21ac7c;
-          font-size: 2px;
-          font-weight: bold;
-        }
-      }
-      &-content {
-        display: flex;
-        flex-direction: row;
-        margin-left: 5vw;
-        &__title {
-          font-family: "Montserrat", sans-serif;
-          font-weight: bold;
-          color: black;
-          font-size: 6px;
-        }
-
-        &__culture {
-          list-style: none;
-          font-size: 14px;
-          width: 11vw;
-          line-height: 3vh;
-          margin-top: 1vh;
-        }
-      }
+    &--soja {
+      color: #8bbc80;
     }
   }
 }
