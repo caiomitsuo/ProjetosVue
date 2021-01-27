@@ -3,7 +3,6 @@
     "name": "index",
     "path": "/",
     "component": "/Users/caiomitsuo/Desktop/ProjetosVue/agrotech/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_766c01aa"
+    "chunkName": "pages/index"
   }
 ]
