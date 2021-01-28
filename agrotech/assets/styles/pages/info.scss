@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Yusei+Magic&display=swap");
+
+.content{
+    &-title{
+        margin-top: 4vh;
+        color:  #21ac7c;
+        font-family: 'Raleway';
+        margin-left: 5vh;
+        font-size: 24px;
+    }
+}
+table{
+    margin-top: 3vh;
+    margin-left: 4vh;
+    background-color:#e4eae8;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
+.header {
+  &-title {
+    padding: 5px 10px;
+    font-family: "Raleway";
+    color: gray;
+    text-align: left;
+  }
+}
+.table{
+    &-info{
+        font-family: 'Roboto';
+        padding: 5px 10px;
+        font-size: 14px;
+        color: black;
+
+        &--soja{
+            color: #8bbc80;
+        }
+
+        &--milho{
+            color: #fead69;
+        }
+
+        &--trigo{
+            color: #b49067;
+        }
+    }
+}
