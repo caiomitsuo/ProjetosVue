@@ -1,8 +1,16 @@
 [
   {
+    "name": "info",
+    "path": "/info",
+    "component": "/Users/caiomitsuo/Desktop/ProjetosVue/agrotech/pages/info.vue",
+    "chunkName": "pages/info",
+    "_name": "_f3e3d136"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/caiomitsuo/Desktop/ProjetosVue/agrotech/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_766c01aa"
   }
 ]
